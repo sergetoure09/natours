@@ -64,7 +64,7 @@ body{
     font-weight: bolder;
     font-size: 4em;
     letter-spacing: 30px;
-    animation:moveRight 2s ease-in;
+    animation:moveRight 1s ease-in;
     animation-direction: alternate;
 }
 
@@ -72,7 +72,7 @@ body{
     display: block;
     font-size: 1.3em;
     letter-spacing: 10px;
-    animation: moveLeft 2s ease-in;
+    animation: moveLeft 1s ease-in;
 }
 
 .btn{
@@ -88,19 +88,24 @@ body{
     border-radius: 50px;
     padding: 15px 35px;
     margin: 50px;
-    animation:moveUp 2s ease-in;
+    animation:moveUp 1s ease-in;
+    animation-fill-mode: none;  
+    box-shadow: 0px 10px 25px rgba(0, 0, 0,.5)
    }
 
 
   .btn:link,btn:visited{
 
+
   } 
 
   .btn-white:hover{
+      transform: translateY(-2px)
 
   }
 
   .btn-white:active{
+    transform: translateY(1px)
 
   }
 
@@ -111,8 +116,8 @@ body{
 
     }
 
-    70%{
-        transform: translateX(-70px)
+    90%{
+        transform: translateX(-90px)
 
     }
     100%{
@@ -129,8 +134,8 @@ body{
 
     }
 
-    70%{
-        transform: translateX(70px)
+    90%{
+        transform: translateX(90px)
 
     }
     100%{
@@ -144,6 +149,11 @@ body{
     0%{
         opacity: 0;
         transform: translateY(100px)
+
+    }
+    90%{
+        
+        transform: translateY(90px)
 
     }
 
