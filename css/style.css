@@ -9,20 +9,28 @@ Dark green: #28b485
 
 
 
-*{
+*,
+*::after,
+*::before{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: inherit
+}
+
+
+html{
+    font-size: 62.5%;
 }
 
 body {
+    box-sizing:border-box;
     font-family:"Lato",sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.7;
     color: rgb(92, 90, 90);
-    padding: 30px;
-    border: 2px solid orange
+    padding: 3rem;
+   
 }
 
 .header{
@@ -33,26 +41,24 @@ body {
         #7ed56fc2,
         #28b485b7),
         url(../img/hero.jpg) ;
-    background-size: cover;
+        background-size:cover;
     background-position: top;
     clip-path: polygon(0 0,100vw 0,100vw 75vh,0 100%)
 }
 
 
-.logo-box{
+.header__logo-box{
     position: absolute;
-    top: 40px;
-    left: 40px;
-    
+    top: 4rem;
+    left: 4rem;   
+}
+.header__logo{
+
+    height: 3.5rem;
+
 }
 
-.logo{
-
-    height: 35px;
-
-}
-
-.text-box{
+.header__text-box{
 
     position: absolute;
     top: 50%;
@@ -68,12 +74,12 @@ body {
 
 }
 
-.heading-primary-main{
+.heading-primary--main{
 
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 2s; 
     animation-timing-function:ease-out
@@ -82,11 +88,11 @@ body {
    
 
 }
-.heading-primary-sub{
+.heading-primary--sub{
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 19px;
+    letter-spacing: 1.9rem;
     animation: moveInRight 2s ease-out;
   
     
@@ -103,11 +109,11 @@ body {
 @keyframes moveInLeft{
     0%{
         opacity: 0;
-        transform: translateX(-100px)
+        transform: translateX(-10rem)
     }
 
     95%{
-        transform: translateX(100px)
+        transform: translateX(10rem)
 
     }
 
@@ -123,12 +129,12 @@ body {
 @keyframes moveInRight {
     0%{
         opacity: 0;
-        transform: translateX(100px)
+        transform: translateX(10rem)
 
     }
 
     95%{
-        transform: translateX(-100px)
+        transform: translateX(-10rem)
     }
 
     100%{
@@ -142,12 +148,12 @@ body {
 @keyframes moveInUp {
     0%{
         opacity: 0;
-        transform: translateY(100px)
+        transform: translateY(10rem)
 
     }
 
     95%{
-        transform: translateY(80px);
+        transform: translateY(8rem);
         opacity: 0.2;
        
     }
@@ -165,49 +171,55 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding:15px 40px;
+    padding:1.5rem 4rem;
     display: inline-block;
-    border-radius: 50px;
+    border-radius: 5rem;
     transition: all .2s;
     position: relative;
 }
+.btn--animated{
+    animation:moveInUp 2s ease-out;
+    box-shadow: 0 -.8rem 2rem rgba(0, 0, 0, .4)
 
-.btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 -10px 15px rgba(0, 0, 0, .4)
 }
 
-.btn:active{
+.btn--animated:hover{
+    transform: translateY(-.3rem);
+    box-shadow: 0 -.8rem .9rem rgba(0, 0, 0, .4)
+}
+
+.btn--animated:active{
     transform: translateY(-1px);
-    box-shadow: 0 -5 0 rgba(0, 0, 0, .1)
+    box-shadow: 0 -.5rem .3rem rgba(0, 0, 0, .1)
 }
 
-.btn-white{
+.btn--white{
     background-color: #fff;
     color: grey;
-    animation:moveInUp 2s ease-out
+    
 
 }
 
-.btn::after{
+.btn--animated::after{
     content:"";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
     position: absolute;
     top: 0;
     left:0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 5rem;
+   
     z-index: -1;
     transition: all .2s
 }
 
-.btn-white::after{
-    background-color: #fff;
+.btn--white::after{
+    background-color: rgb(255, 255, 255);
 }
 
-.btn:hover::after{
-    transform: scaleX(1.5) scaleY(1.6);
+.btn--animated:hover::after{
+    transform: scaleX(2) scaleY(2);
     opacity: 0
 
 }
