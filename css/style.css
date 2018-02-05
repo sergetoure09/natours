@@ -11,7 +11,12 @@ Dark green: #28b485
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit
+   
+}
+
+html{
+    font-size: 62.5%
 }
 
 
@@ -22,7 +27,8 @@ body{
     font-weight: 400;
     line-height: 1.7;
     color: black;
-    padding: 30px;
+    padding: 3rem;
+    box-sizing: border-box;
 }
 
 .header{
@@ -35,18 +41,18 @@ body{
 
 }
 
-.logo-div{
+.header__logo-div{
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
-.logo-img{
-    height: 35px;
+.header__logo-img{
+    height: 3.5rem;
 }
 
 
-.text-box{
+.header__text-box{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -59,20 +65,20 @@ body{
 
 }
 
-.main-text{
+.header__main-text{
     display: block;
     font-weight: bolder;
-    font-size: 4em;
-    letter-spacing: 30px;
-    animation:moveRight 1s ease-in;
+    font-size: 4rem;
+    letter-spacing: 3rem;
+    animation:moveRight 2s ease-in;
     animation-direction: alternate;
 }
 
-.second-text{
+.header__second-text{
     display: block;
-    font-size: 1.3em;
-    letter-spacing: 10px;
-    animation: moveLeft 1s ease-in;
+    font-size: 1.3rem;
+    letter-spacing: 1rem;
+    animation: moveLeft 2s ease-in;
 }
 
 .btn{
@@ -83,41 +89,42 @@ body{
    
 }
 
-.btn-white{
+.btn--white{
     background-color: #fff;
-    border-radius: 50px;
-    padding: 15px 35px;
-    margin: 50px;
-    animation:moveUp 1s ease-in;
+    border-radius: 5rem;
+    padding: 1.5rem 3.5rem;
+    margin: 5rem;
+    animation:moveUp 2s ease-in;
     animation-fill-mode: none;  
-    box-shadow: 0px 10px 25px rgba(0, 0, 0,.5)
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0,.5)
    }
 
 
   .btn:link,btn:visited{
-
+    
 
   } 
 
-  .btn-white:hover{
-      transform: translateY(-2px)
+  .btn--white:hover{
+      transform: translateY(-.2rem)
 
   }
 
-  .btn-white:active{
-    transform: translateY(1px)
+  .btn--white:active{
+    transform: translateY(.1rem);
+    box-shadow: 0  .5rem 2rem rgba(0, 0, 0,.5)
 
   }
 
 @keyframes moveRight{
     0%{
         opacity: 0;
-        transform: translateX(-100px)
+        transform: translateX(-10rem)
 
     }
 
     90%{
-        transform: translateX(-90px)
+        transform: translateX(-9rem)
 
     }
     100%{
@@ -130,12 +137,12 @@ body{
 @keyframes moveLeft{
     0%{
         opacity: 0;
-        transform: translateX(100px)
+        transform: translateX(10rem)
 
     }
 
     90%{
-        transform: translateX(90px)
+        transform: translateX(9rem)
 
     }
     100%{
@@ -148,12 +155,12 @@ body{
 @keyframes moveUp{
     0%{
         opacity: 0;
-        transform: translateY(100px)
+        transform: translateY(10rem)
 
     }
     90%{
         
-        transform: translateY(90px)
+        transform: translateY(9rem)
 
     }
 
