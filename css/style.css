@@ -85,7 +85,8 @@ body{
     display: inline-block;
     text-decoration: none;
     color: rgb(85, 82, 82);
-    transition: all .2s
+    transition: all .2s;
+    font-weight: bold
    
 }
 
