@@ -68,9 +68,49 @@ body {
     transform: translate(-50%, -100%);
     text-align: center; }
 
+.container {
+  max-width: 100%;
+  margin: 0 auto; }
+  .container .row {
+    width: 100%;
+    background-color: #eee; }
+    .container .row::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .container .row:not(:last-child) {
+      margin-bottom: 5rem; }
+    .container .row div {
+      height: 5rem;
+      background-color: #249906;
+      float: left; }
+    .container .row [class^='col-']:not(:last-child) {
+      margin-right: 2rem; }
+    .container .row .col-1-of-10 {
+      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 1) + ((1 - 1) * 2rem)); }
+    .container .row .col-2-of-10 {
+      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 2) + ((2 - 1) * 2rem)); }
+    .container .row .col-3-of-10 {
+      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 3) + ((3 - 1) * 2rem)); }
+    .container .row .col-4-of-10 {
+      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 4) + ((4 - 1) * 2rem)); }
+    .container .row .col-5-of-10 {
+      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 5) + ((5 - 1) * 2rem)); }
+    .container .row .col-6-of-10 {
+      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 6) + ((6 - 1) * 2rem)); }
+    .container .row .col-7-of-10 {
+      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 7) + ((7 - 1) * 2rem)); }
+    .container .row .col-8-of-10 {
+      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 8) + ((8 - 1) * 2rem)); }
+    .container .row .col-9-of-10 {
+      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 9) + ((9 - 1) * 2rem)); }
+    .container .row .col-10-of-10 {
+      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 10) + ((10 - 1) * 2rem)); }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 1.5rem;
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 5rem;
