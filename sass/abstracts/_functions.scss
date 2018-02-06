@@ -1,0 +1,4 @@
+@function mult($n){
+    @return calc(#{$base-width}*#{$n});
+}
+

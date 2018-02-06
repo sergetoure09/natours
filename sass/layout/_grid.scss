@@ -1,0 +1,68 @@
+.container{
+    max-width:$max-width;
+    margin:0 auto;
+
+    
+        
+   
+
+    .row{
+        width:100%;
+        @include clearfix;
+      
+
+        &:not(:last-child){
+    margin-bottom:$vertical-gutter;
+
+        }
+        
+        
+
+        div{
+           @include col_base;
+           //margin: $horizontal-gutter;
+        }
+        
+
+        .col-1-of-10{
+
+            width: mult(1)
+
+        };
+        .col-2-of-10{
+            width: mult(2)
+        };
+        .col-3-of-10{
+            width: mult(3)
+        };
+        .col-4-of-10{
+            width: mult(4)
+        };
+        .col-5-of-10{
+            width: mult(5)
+
+        };
+        .col-6-of-10{
+            width: mult(6)
+
+        };
+        .col-7-of-10{
+            width: mult(7)
+
+        };
+        .col-8-of-10{
+            width: mult(8)
+
+        };
+        .col-9-of-10{
+            width: mult(9)
+
+        };
+        .col-10-of-10{
+            width: mult(10)
+
+        };
+       
+
+    }
+}

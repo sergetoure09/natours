@@ -68,9 +68,46 @@ body {
     transform: translate(-50%, -100%);
     text-align: center; }
 
+.container {
+  max-width: 130rem;
+  margin: 0 auto; }
+  .container .row {
+    width: 100%; }
+    .container .row::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .container .row:not(:last-child) {
+      margin-bottom: 2rem; }
+    .container .row div {
+      height: 15rem;
+      background-color: #f82e2e;
+      float: left; }
+    .container .row .col-1-of-10 {
+      width: calc(10%*1); }
+    .container .row .col-2-of-10 {
+      width: calc(10%*2); }
+    .container .row .col-3-of-10 {
+      width: calc(10%*3); }
+    .container .row .col-4-of-10 {
+      width: calc(10%*4); }
+    .container .row .col-5-of-10 {
+      width: calc(10%*5); }
+    .container .row .col-6-of-10 {
+      width: calc(10%*6); }
+    .container .row .col-7-of-10 {
+      width: calc(10%*7); }
+    .container .row .col-8-of-10 {
+      width: calc(10%*8); }
+    .container .row .col-9-of-10 {
+      width: calc(10%*9); }
+    .container .row .col-10-of-10 {
+      width: calc(10%*10); }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 1.5rem;
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 5rem;
