@@ -81,31 +81,36 @@ body {
     .container .row:not(:last-child) {
       margin-bottom: 5rem; }
     .container .row div {
-      height: 5rem;
+      height: 50rem;
       background-color: #249906;
-      float: left; }
+      float: left;
+      color: white; }
     .container .row [class^='col-']:not(:last-child) {
       margin-right: 2rem; }
-    .container .row .col-1-of-10 {
-      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 1) + ((1 - 1) * 2rem)); }
-    .container .row .col-2-of-10 {
-      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 2) + ((2 - 1) * 2rem)); }
-    .container .row .col-3-of-10 {
-      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 3) + ((3 - 1) * 2rem)); }
-    .container .row .col-4-of-10 {
-      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 4) + ((4 - 1) * 2rem)); }
-    .container .row .col-5-of-10 {
-      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 5) + ((5 - 1) * 2rem)); }
-    .container .row .col-6-of-10 {
-      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 6) + ((6 - 1) * 2rem)); }
-    .container .row .col-7-of-10 {
-      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 7) + ((7 - 1) * 2rem)); }
-    .container .row .col-8-of-10 {
-      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 8) + ((8 - 1) * 2rem)); }
-    .container .row .col-9-of-10 {
-      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 9) + ((9 - 1) * 2rem)); }
-    .container .row .col-10-of-10 {
-      width: calc((calc((100% - ((10 - 1) * 2rem)) / 10) * 10) + ((10 - 1) * 2rem)); }
+    .container .row .col-1-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 1) + ((1 - 1) * 2rem)); }
+    .container .row .col-2-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 2) + ((2 - 1) * 2rem)); }
+    .container .row .col-3-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 3) + ((3 - 1) * 2rem)); }
+    .container .row .col-4-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 4) + ((4 - 1) * 2rem)); }
+    .container .row .col-5-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 5) + ((5 - 1) * 2rem)); }
+    .container .row .col-6-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 6) + ((6 - 1) * 2rem)); }
+    .container .row .col-7-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 7) + ((7 - 1) * 2rem)); }
+    .container .row .col-8-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 8) + ((8 - 1) * 2rem)); }
+    .container .row .col-9-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 9) + ((9 - 1) * 2rem)); }
+    .container .row .col-10-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 10) + ((10 - 1) * 2rem)); }
+    .container .row .col-11-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 11) + ((11 - 1) * 2rem)); }
+    .container .row .col-12-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 12) + ((12 - 1) * 2rem)); }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
