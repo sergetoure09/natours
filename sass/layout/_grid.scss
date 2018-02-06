@@ -3,11 +3,10 @@
     margin:0 auto;
 
     
-        
-   
-
+    
     .row{
         width:100%;
+        background-color: #eee;
         @include clearfix;
       
 
@@ -21,6 +20,12 @@
         div{
            @include col_base;
            //margin: $horizontal-gutter;
+        }
+
+        [class^='col-']{
+            &:not(:last-child){
+                margin-right:$horizontal-gutter;
+            }
         }
         
 
