@@ -6,12 +6,12 @@
     
     .row{
         width:100%;
-        background-color: #eee;
+        //background-color: #eee;
         @include clearfix;
       
 
         &:not(:last-child){
-    margin-bottom:$vertical-gutter;
+        margin-bottom:$vertical-gutter;
 
         }
         
@@ -20,7 +20,7 @@
         div{
            @include col_base;
            //margin: $horizontal-gutter;
-           color: white;
+           //color: rgb(26, 24, 24);
         }
 
         [class^='col-']{

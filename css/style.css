@@ -48,10 +48,13 @@ body {
   color: #5c5a5a;
   padding: 3rem; }
 
+.u-center-text {
+  text-align: center; }
+
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.6)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 0 100%); }
@@ -72,19 +75,15 @@ body {
   max-width: 100%;
   margin: 0 auto; }
   .container .row {
-    width: 100%;
-    background-color: #eee; }
+    width: 100%; }
     .container .row::after {
       content: "";
       display: block;
       clear: both; }
     .container .row:not(:last-child) {
-      margin-bottom: 5rem; }
+      margin-bottom: 1rem; }
     .container .row div {
-      height: 5rem;
-      background-color: #249906;
-      float: left;
-      color: white; }
+      float: left; }
     .container .row [class^='col-']:not(:last-child) {
       margin-right: 2rem; }
     .container .row .col-1-of-12 {
@@ -153,7 +152,7 @@ body {
     background-color: white; }
 
 .heading-primary {
-  color: #5c5a5a;
+  color: white;
   text-transform: uppercase;
   margin-bottom: 60px; }
   .heading-primary--main {
@@ -171,3 +170,22 @@ body {
     letter-spacing: 1.9rem;
     animation: moveInRight 2s ease-out;
     color: white; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(92, 90, 90, 0.3); }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
