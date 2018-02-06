@@ -51,6 +51,9 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-margin-bottom-80 {
+  margin-bottom: 8rem; }
+
 .header {
   position: relative;
   height: 95vh;
