@@ -53,11 +53,13 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
-        color: $color-primary;
+        //color: $color-primary;
+        color: $color-white;
         display: inline-block;
         text-decoration: none;
+        background-image:linear-gradient(to right ,$color-primary,$color-primary-light);
         border-bottom: 1px solid $color-primary;
-        padding:.3rem; 
+        padding:.5rem; 
 
 
     }
@@ -66,7 +68,7 @@
 
         transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-        background-color:$color-primary;
+       
         color: $color-white;
         //border: 1px solid $color-primary;
 
@@ -74,8 +76,8 @@
 
     &:active{
         transform: translateY(-.1rem);
-        background-color:$color-primary;
-        color: $color-white;
+        
+       
         box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
 
 
