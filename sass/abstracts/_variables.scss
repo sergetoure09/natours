@@ -9,6 +9,8 @@ $col:12;
 $row-height:1rem;
 $horizontal-gutter:2rem;
 $base_width:calc((100% - ((#{$col} - 1) * #{$horizontal-gutter})) / #{$col});
-$max-width:100%;
+$max-width:80%;
 $vertical-gutter:1rem;
+//font-size
+$default-font-size:1.3rem;
 
