@@ -161,10 +161,10 @@ body {
     clear: both; }
   .row:not(:last-child) {
     margin-bottom: 1rem; }
-  .row div {
+  .row [class^='col-'] {
     float: left; }
-  .row [class^='col-']:not(:last-child) {
-    margin-right: 2rem; }
+    .row [class^='col-']:not(:last-child) {
+      margin-right: 2rem; }
   .row .col-1-of-12 {
     width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 1) + ((1 - 1) * 2rem)); }
   .row .col-2-of-12 {

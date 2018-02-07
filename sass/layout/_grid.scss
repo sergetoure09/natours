@@ -20,12 +20,13 @@
         
 
         div{
-           @include col_base;
+           
            //margin: $horizontal-gutter;
            //color: rgb(26, 24, 24);
         }
 
         [class^='col-']{
+            @include col_base;
             &:not(:last-child){
                 margin-right:$horizontal-gutter;
             }
