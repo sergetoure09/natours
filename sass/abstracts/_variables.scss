@@ -2,12 +2,16 @@ $color-primary:#55c57a;
 $color-primary-light:#7ed56f;
 $color-primary-dark:#28b485;
 $color-grey-dark:rgb(92, 90, 90);
+$col-bg-color:rgb(247, 139, 139);
+$color-grey-light-1:#f7f7f7;
 $color-white:white;
 $color-bg-main:#f7f7f7;
 $col:12;
-$row-height:5rem;
-$horizontal-gutter:5rem;
+$row-height:1rem;
+$horizontal-gutter:2rem;
 $base_width:calc((100% - ((#{$col} - 1) * #{$horizontal-gutter})) / #{$col});
 $max-width:80%;
-$vertical-gutter:5rem;
+$vertical-gutter:1rem;
+//font-size
+$default-font-size:1.3rem;
 

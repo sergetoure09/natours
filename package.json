@@ -10,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "aos": "^2.2.0",
+    "rellax": "^1.5.0"
   }
 }

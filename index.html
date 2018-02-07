@@ -6,6 +6,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
@@ -13,7 +14,7 @@
     </head>
     <body>
         
-        <header class="header">
+        <header class="header rellax">
             <div class="header__logo-box">
                 <img src="./img/logo-white.png" alt="logo crown" class="header__logo">
             </div>
@@ -29,37 +30,46 @@
         </div>
        </header>
 
-     <main class="main">
-         <div class="section-about">
-             <div class="u-margin-bottom-big u-align-center">
-             <h3 class="heading-secondary">The nature is yours and you will love it</h3>
-            </div>
-             <div class="container">
-                 <div class="row">
-                     <div class="col-6-of-12">
+       <main class="main">
+           <section class="section-about">
+               <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary" >exciting tours for adventurous people</h2>
+               </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6-of-12" data-aos="fade-right" aos-duration="1000">
+                    <h3 class="heading-tertiary u-margin-bottom-small">you are going to fall in love with nature</h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus molestiae consequatur possimus quisquam illum nemo fugit. Fuga voluptatem veritatis commodi corrupti perspiciatis. Illo sint odio non tempora aliquid itaque.
+                    </p>
+                    
+                    <h3 class="heading-tertiary  u-margin-bottom-small">you are going to fall in love with nature</h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus molestiae consequatur possimus quisquam illum nemo fugit. Fuga voluptatem veritatis commodi corrupti perspiciatis. Illo sint odio non tempora aliquid itaque.
+                    </p>
 
-                             <div class="text-box u-margin-bottom-small">
-                             <h2 class="heading-tertiary u-margin-bottom-small">Discover the best tours</h2>
-                             <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus harum facere veniam ducimus doloribus eligendi ratione architecto consectetur asperiores pariatur, rem consequuntur fugit impedit praesentium velit ipsam illum illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aut accusantium quos culpa. Pariatur laborum eius natus praesentium modi fuga commodi neque delectus assumenda nostrum maiores earum sunt, distinctio in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eum quos at adipisci, laborum rerum ab voluptas similique, labore sit animi enim debitis nisi repudiandae quas nihil et. Sit, mollitia.</p>
-                             </div>
+                    <a href="#" class="btn-text">
+                        learn more &rarr;
+                    </a>
+                </div>
+                <div class="col-6-of-12">
 
-                             <div class="text-box u-margin-bottom-medium">
-                             <h2 class="heading-tertiary u-margin-bottom-small">Find people to tours together</h2>
-                             <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur magnam ex numquam voluptatem nobis, dolor, nam obcaecati quibusdam quos reprehenderit voluptate iure aliquam labore libero eaque ullam possimus minus laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, accusantium repellendus? Tempora, odit modi enim aperiam esse suscipit possimus eveniet natus sint tempore ut. Quibusdam dolor deleniti quo id iste.</p>
-                            </div>
-
-                            <a href="#" class="read-more">Read more &rarr;</a>
+                    <div class="img-box" data-aos="fade-left" aos-duration="1000"  >
+                        <img src="./img/nat-1.jpg" alt="nature health" class="z--1 img-box__nat">
+                    
+                        <img src="./img/nat-2.jpg"  alt="nature birds" class="z--2 img-box__nat">
+                        <img src="./img/nat-3.jpg"  alt="nature lion" class="z--3 img-box__nat">
                     </div>
 
-                     
-                     <div class="col-6-of-12">Images animated here</div>
-                 </div>
-             </div>
-         </div>
-     </main>
+                </div>
+            </div>
+        </div>
+               
+           </section>
+       </main>
 
-    <!--
-
+       
+<!--
        <section class="container">
            <div class="row">
                <div class="col-6-of-12">col-6-of-12</div>
@@ -145,7 +155,23 @@
 
        </section>
     -->
-           
-        
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="./node_modules/rellax/rellax.min.js"></script>
+    <!-- <script>
+            // Accepts any class name
+            var rellax = new Rellax('.rellax');
+          </script> -->
+          <script>
+            // Also can pass in optional settings block
+            var rellax = new Rellax('.rellax', {
+              speed: -2,
+              center: false,
+              round: true,
+              vertical: true,
+              horizontal: false
+            });
+          </script>
+
     </body>
 </html>

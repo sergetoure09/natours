@@ -1,0 +1,9 @@
+.img-box{
+
+    position: relative;
+
+    &__nat{
+        @extend %caroussel;
+
+    }
+}
