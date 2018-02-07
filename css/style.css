@@ -124,10 +124,10 @@ body {
       clear: both; }
     .container .row:not(:last-child) {
       margin-bottom: 1rem; }
-    .container .row div {
+    .container .row [class^='col-'] {
       float: left; }
-    .container .row [class^='col-']:not(:last-child) {
-      margin-right: 2rem; }
+      .container .row [class^='col-']:not(:last-child) {
+        margin-right: 2rem; }
     .container .row .col-1-of-12 {
       width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 1) + ((1 - 1) * 2rem)); }
     .container .row .col-2-of-12 {
