@@ -88,6 +88,11 @@ body {
   top: 100px;
   left: 150px; }
 
+.z--4 {
+  z-index: 300;
+  top: 70px;
+  left: 250px; }
+
 .header {
   position: relative;
   height: 95vh;
