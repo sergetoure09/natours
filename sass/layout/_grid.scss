@@ -1,82 +1,12 @@
 .container{
     max-width:$max-width;
     margin:0 auto;
+    @include grid
+}
 
-    
-    
-    .row{
-        width:100%;
-        background-color: #eee;
-        @include clearfix;
-      
+.container-100{
+    max-width:100%;
+    margin:0 auto;
+    @include grid
 
-        &:not(:last-child){
-    margin-bottom:$vertical-gutter;
-
-        }
-        
-        
-
-        div{
-           @include col_base;
-           //margin: $horizontal-gutter;
-           color: white;
-        }
-
-        [class^='col-']{
-            &:not(:last-child){
-                margin-right:$horizontal-gutter;
-            }
-        }
-        
-
-        .col-1-of-12{
-
-            width: mult(1)
-
-        };
-        .col-2-of-12{
-            width: mult(2)
-        };
-        .col-3-of-12{
-            width: mult(3)
-        };
-        .col-4-of-12{
-            width: mult(4)
-        };
-        .col-5-of-12{
-            width: mult(5)
-
-        };
-        .col-6-of-12{
-            width: mult(6)
-
-        };
-        .col-7-of-12{
-            width: mult(7)
-
-        };
-        .col-8-of-12{
-            width: mult(8)
-
-        };
-        .col-9-of-12{
-            width: mult(9)
-
-        };
-        .col-10-of-12{
-            width: mult(10)
-
-        }; 
-        .col-11-of-12{
-            width: mult(11)
-
-        };
-        .col-12-of-12{
-            width: mult(12)
-
-        };
-       
-
-    }
 }

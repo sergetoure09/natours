@@ -1,3 +1,9 @@
+.paragraph {
+  font-size: 1.2rem; }
+
+.read-more {
+  font-size: 1.9rem; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -48,6 +54,18 @@ body {
   color: #5c5a5a;
   padding: 3rem; }
 
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-align-center {
+  text-align: center; }
+
 .header {
   position: relative;
   height: 95vh;
@@ -69,48 +87,89 @@ body {
     text-align: center; }
 
 .container {
-  max-width: 100%;
+  max-width: 80%;
   margin: 0 auto; }
   .container .row {
-    width: 100%;
-    background-color: #eee; }
+    width: 100%; }
     .container .row::after {
       content: "";
       display: block;
       clear: both; }
     .container .row:not(:last-child) {
       margin-bottom: 5rem; }
-    .container .row div {
-      height: 5rem;
-      background-color: #249906;
-      float: left;
-      color: white; }
-    .container .row [class^='col-']:not(:last-child) {
-      margin-right: 2rem; }
+    .container .row [class^='col-'] {
+      float: left; }
+      .container .row [class^='col-']:not(:last-child) {
+        margin-right: 5rem; }
     .container .row .col-1-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 1) + ((1 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 1) + ((1 - 1) * 5rem)); }
     .container .row .col-2-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 2) + ((2 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 2) + ((2 - 1) * 5rem)); }
     .container .row .col-3-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 3) + ((3 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 3) + ((3 - 1) * 5rem)); }
     .container .row .col-4-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 4) + ((4 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 4) + ((4 - 1) * 5rem)); }
     .container .row .col-5-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 5) + ((5 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 5) + ((5 - 1) * 5rem)); }
     .container .row .col-6-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 6) + ((6 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 6) + ((6 - 1) * 5rem)); }
     .container .row .col-7-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 7) + ((7 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 7) + ((7 - 1) * 5rem)); }
     .container .row .col-8-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 8) + ((8 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 8) + ((8 - 1) * 5rem)); }
     .container .row .col-9-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 9) + ((9 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 9) + ((9 - 1) * 5rem)); }
     .container .row .col-10-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 10) + ((10 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 10) + ((10 - 1) * 5rem)); }
     .container .row .col-11-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 11) + ((11 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 11) + ((11 - 1) * 5rem)); }
     .container .row .col-12-of-12 {
-      width: calc((calc((100% - ((12 - 1) * 2rem)) / 12) * 12) + ((12 - 1) * 2rem)); }
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 12) + ((12 - 1) * 5rem)); }
+
+.container-100 {
+  max-width: 100%;
+  margin: 0 auto; }
+  .container-100 .row {
+    width: 100%; }
+    .container-100 .row::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .container-100 .row:not(:last-child) {
+      margin-bottom: 5rem; }
+    .container-100 .row [class^='col-'] {
+      float: left; }
+      .container-100 .row [class^='col-']:not(:last-child) {
+        margin-right: 5rem; }
+    .container-100 .row .col-1-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 1) + ((1 - 1) * 5rem)); }
+    .container-100 .row .col-2-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 2) + ((2 - 1) * 5rem)); }
+    .container-100 .row .col-3-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 3) + ((3 - 1) * 5rem)); }
+    .container-100 .row .col-4-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 4) + ((4 - 1) * 5rem)); }
+    .container-100 .row .col-5-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 5) + ((5 - 1) * 5rem)); }
+    .container-100 .row .col-6-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 6) + ((6 - 1) * 5rem)); }
+    .container-100 .row .col-7-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 7) + ((7 - 1) * 5rem)); }
+    .container-100 .row .col-8-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 8) + ((8 - 1) * 5rem)); }
+    .container-100 .row .col-9-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 9) + ((9 - 1) * 5rem)); }
+    .container-100 .row .col-10-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 10) + ((10 - 1) * 5rem)); }
+    .container-100 .row .col-11-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 11) + ((11 - 1) * 5rem)); }
+    .container-100 .row .col-12-of-12 {
+      width: calc((calc((100% - ((12 - 1) * 5rem)) / 12) * 12) + ((12 - 1) * 5rem)); }
+
+.main {
+  background-color: #f7f7f7;
+  margin-top: -20vh;
+  padding: 25rem 0; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -152,6 +211,21 @@ body {
   .btn--white::after {
     background-color: white; }
 
+.read-more {
+  padding: .6rem;
+  background-image: linear-gradient(to right, #28b485, #7ed56f);
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-block; }
+  .read-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5); }
+  .read-more:active {
+    transform: translateY(-0.5px);
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5); }
+
 .heading-primary {
   color: #5c5a5a;
   text-transform: uppercase;
@@ -171,3 +245,21 @@ body {
     letter-spacing: 1.9rem;
     animation: moveInRight 2s ease-out;
     color: white; }
+
+.heading-secondary {
+  text-decoration: none;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #28b485, #7ed56f);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) scale(1.1);
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase; }

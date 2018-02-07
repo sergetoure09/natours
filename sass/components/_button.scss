@@ -46,3 +46,12 @@
         }
     }
 }
+
+
+.read-more{
+    @extend %medium-size;
+    @include read-more;
+
+   
+
+}
