@@ -13,22 +13,21 @@
     background-size: cover;
     background-position: top;
     transform: skewY(-7deg);
-    height: 70vh;
-    &>.container{
+    height: 85vh;
+    //padding: 15rem;
+    margin-bottom: 15rem;
+
+    .container{
         transform: skewY(7deg);
     }
 
-    &__box{
+    // &:hover .feature-box:not(:hover){
+    //     transform: scale((.8))
+    // }
 
-        background-color:$color-white;
-        opacity: .8;
-        margin-top: 20rem;
-        padding: 2rem;
-    
-
-
-    &__box-img{
-        font-size: 4rem;
-    }
 }
+
+.section-tours{
+
+
 }

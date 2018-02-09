@@ -8,7 +8,7 @@ $color-white:white;
 $color-bg-main:#f7f7f7;
 $col:12;
 $row-height:1rem;
-$horizontal-gutter:2rem;
+$horizontal-gutter:5rem;
 $base_width:calc((100% - ((#{$col} - 1) * #{$horizontal-gutter})) / #{$col});
 $max-width:80%;
 $vertical-gutter:1rem;

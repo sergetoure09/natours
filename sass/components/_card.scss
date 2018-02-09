@@ -1,0 +1,207 @@
+.card{
+   
+
+    //background-color: #fff;
+    //height: 55rem;
+    color: white;
+    position: relative;
+    height: 50rem;
+    perspective: 100rem;
+    -webkit-perspective: 100rem;
+    
+
+    &:hover &__front{
+        transform: rotateY(-180deg)
+    }
+    &:hover &__back{
+        transform: rotateY(0deg)
+    }
+
+
+    &__front {
+        border-radius:3px;
+        height: 50rem;
+       background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        width: 100%;
+        transition: all 1s ease;
+
+        &--1{
+
+        }
+        &--2{
+            
+        }
+        &--3{
+            
+        }
+
+    }
+
+    &__back {
+        border-radius:3px;
+
+        height: 50rem;
+        
+        
+       
+       
+        
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        width: 100%;
+        transition: all 1s ease;
+
+        &--1{
+            background: #642B73;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right bottom, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right bottom, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        &--2{
+            background: #FF512F;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right bottom, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right bottom, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            
+        }
+
+        &--3{
+            background: #348F50;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right bottom, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right bottom, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            
+        }
+
+        
+
+
+
+
+    }
+//overflow: hidden;
+
+    &__img{
+        height: 40%;
+        clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+
+        &--1{
+            background-image: linear-gradient(to right bottom, rgba(#C6426E,.5), rgba(#642B73,.3)),url('../../img/nat-5.jpg');
+            background-position: top;
+            background-size: cover;
+            background-blend-mode: color-dodge;
+
+            
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom, rgba(#DD2476,.5), rgba(#FF512F,.3)),url('../../img/nat-6.jpg');
+            background-position: top;
+            background-size: cover;
+            background-blend-mode: color-dodge;
+            
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba(#56B4D3,.5), rgba(#348F50,.3)),url('../../img/nat-7.jpg');
+            background-position: top;
+            background-size: cover;
+            background-blend-mode: color-dodge;
+            
+        }
+
+    }
+
+    &__details{
+
+      ul{
+          //display: block;
+          width: 50%;
+          text-align: center;
+          padding: 4rem 0;
+          margin: 0 auto;
+          font-size: 1.6rem;
+          color: black;
+          list-style-type: none;
+
+          li{
+
+            
+              padding: 1rem 0;
+              &:not(:last-child){
+              border-bottom: .2px solid rgba(128, 128, 128, 0.938);
+              }
+
+
+          }
+      }
+
+    }
+
+
+    &__splash{
+        position: absolute;
+        top: 10rem;
+        left: 10rem;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 300;
+        //webkit-box-break:clone;
+
+
+
+        &--1{
+            background-image: linear-gradient(to right,rgba(#C6426E,.5), rgba(#642B73,.5));
+            
+        }
+        &--2{
+            
+        }
+        &--3{
+            
+        }
+
+        
+    }
+
+
+
+}
+
+.cat{
+    width: 25rem;
+    margin: 40% auto;
+    text-align: center;
+
+
+
+    &__only{
+         //color: blue;
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 10rem;
+    text-align: center
+   
+
+
+    }
+
+
+
+    &__price{
+        display: block;
+        margin-bottom: 5rem;
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 100;
+   
+
+
+    }
+}
+
