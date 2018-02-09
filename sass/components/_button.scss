@@ -74,6 +74,15 @@
             background-color: rgb(255, 255, 255);
         }
     }
+
+    &--green {
+        background-color: $color-primary-light;
+        margin-top: 6rem;
+        color: $color-white;
+        &::after {
+            background-color: rgb(255, 255, 255);
+        }
+    }
 }
 
 
