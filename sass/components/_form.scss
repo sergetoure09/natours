@@ -56,28 +56,31 @@
  
 
    &__radio-btn{
-       &:after{
-           content: "";
-           border: 5px solid $color-primary;
+       &::after{
+            content: "";
            display: inline-block;
-           width: 3rem;
-           height: 3rem;
+           width: 1.5rem;
+           height: 1.5rem;
+           background-color:$color-primary;
            border-radius: 50px;
            position: absolute;
-           top: -7px;;
-           left: -7.5px;
+           top: 2px;
+           left: 2px;
+           opacity: 0;
+           transition: opacity 0.3s;
 
        }
+      
+       border: 5px solid $color-primary;
        display: inline-block;
-       width: 1.5rem;
-       height: 1.5rem;
-       background-color:$color-primary;
+       width: 3rem;
+       height: 3rem;
        border-radius: 50px;
        position: absolute;
-       top: 0;
-       left: 0;
-       opacity: 1;
-       transition: opacity 0.3s;
+       top: -7px;;
+       left: -7.5px;
+       cursor: pointer;
+      
 
       
 
@@ -102,7 +105,7 @@
    }
 
 
-   &__hidden-radio:checked &__radio-btn{
-       opacity: 0;
+   &__hidden-radio:checked + &__radio-btn::after{
+       opacity: 1;
    }
 }
