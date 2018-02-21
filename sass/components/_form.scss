@@ -1,0 +1,55 @@
+.form{
+
+   width: 90%;
+   margin: 0 auto;
+   padding: 1rem 0;
+
+    &__label{
+        display: block;
+        margin-left: 1.5rem;
+        opacity: 1;
+        transition: all .3s;
+        margin-top: .4rem;
+
+    }
+
+   &__input{
+       display: block;
+       outline: none;
+       width: 70%;
+       height: 4rem;
+       border: none;
+       padding: 1rem 1.5rem;
+       border-radius: 1.5px;
+       font-size: 1.6rem;
+       
+       transition: all .2s;
+       &:focus:invalid{
+        border-bottom: 2px solid orangered;
+    }
+        &:focus:valid{
+     border-bottom: 2px solid rgb(7, 179, 7);
+ }
+
+       &::-webkit-input-placeholder{
+           font-size: 1.6rem;
+           color: lightgray;
+           font-weight: 400;
+       }
+       
+
+
+   }
+
+   &__input:placeholder-shown + &__label {
+
+    opacity: 0;
+    transform: translateY(-7px)
+    
+
+   } 
+
+ 
+
+   
+}
