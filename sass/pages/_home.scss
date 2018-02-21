@@ -74,3 +74,13 @@
 
 
 }
+
+.radio-group{
+    display: inline-block;
+    &:not(:last-child){
+        margin-right: 13rem;
+    }
+
+    position: relative;
+    
+}
