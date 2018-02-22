@@ -64,8 +64,8 @@
            background-color:$color-primary;
            border-radius: 50px;
            position: absolute;
-           top: 2px;
-           left: 2px;
+           top: 2.2px;
+           left: 2.4px;
            opacity: 0;
            transition: opacity 0.3s;
 
@@ -78,25 +78,16 @@
        border-radius: 50px;
        position: absolute;
        top: -7px;;
-       left: -7.5px;
+       left: -7px;
        cursor: pointer;
-      
-
-      
-
 
    }
-
-   
 
    &__radio-label{
        display: inline-block;
        margin-left: 3rem;
        font-size: 1.6rem;
-      
-
    }
-
 
    &__hidden-radio{
      display: inline-block;
@@ -105,7 +96,7 @@
    }
 
 
-   &__hidden-radio:checked + &__radio-btn::after{
+   &__hidden-radio:checked + &__radio-label > &__radio-btn::after{
        opacity: 1;
    }
 }
