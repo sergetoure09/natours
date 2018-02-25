@@ -6,6 +6,8 @@
     background-color:$color-white;
     border-radius: 5px;
     overflow: hidden;
+   transform: translate(-50%,50%) scale(.5);
+   transition: all .3s .2s;
     
 
 
@@ -20,8 +22,8 @@
 
 
     &__left{
-        display: table-cell;
-        vertical-align: middle
+    display: table-cell;
+        //vertical-align: middle
         
 
     }
@@ -29,6 +31,7 @@
 
 
     &__right{
+        padding: 4rem 4rem;
         display: table-cell;
         vertical-align: middle;
         margin-left: 3rem;
@@ -49,7 +52,26 @@
     &__text{
 
         column-count: 2;
+        width: 70rem;
         column-gap: 2rem;
         column-rule: 1px solid $color-grey-dark
+    }
+
+
+    &__close{
+        text-decoration: none;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 3rem;
+        color: $color-grey-dark;
+
+
+        &:hover{
+            color:$color-primary;
+            cursor: pointer;
+        }
+
+
     }
 }
