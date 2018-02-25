@@ -1,0 +1,62 @@
+.button-circle{
+    z-index: 10000;
+   
+
+
+
+
+    &__checkbox{
+
+    }
+
+    &__label{
+        position: fixed;
+        top: 3rem;
+        right: 3rem;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50px;
+        background-color: $color-white;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        //text-justify: distribute;
+
+
+
+
+
+        span{
+        //    position: relative;
+        //    display: block;
+        // text-align: center;
+           
+            
+
+            &,
+            &::before,
+            &::after{
+                display: inline-block;
+                width: 3rem;
+                height: 2px;
+                background-color: $color-grey-dark;
+                position: absolute;
+                top: 50%;
+                right: 0;
+
+
+            }
+
+            &::after,
+            &::before{
+                content: "";
+                
+            }
+          
+
+            &::after{transform: translateY(1rem);background-color: red}
+            &::before{transform: translateY(-1rem);background-color: green}
+
+        }
+    }
+}
