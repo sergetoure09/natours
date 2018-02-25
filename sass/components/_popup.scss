@@ -1,0 +1,55 @@
+.popup{
+
+    @include absPos;
+    width: 80%;
+    height: 50rem;
+    background-color:$color-white;
+    border-radius: 5px;
+    overflow: hidden;
+    
+
+
+    &__content{
+        display: table;
+       
+        
+
+
+    }
+
+
+
+    &__left{
+        display: table-cell;
+        vertical-align: middle
+        
+
+    }
+
+
+
+    &__right{
+        display: table-cell;
+        vertical-align: middle;
+        margin-left: 3rem;
+
+
+    }
+
+
+
+    &__img{
+        width: 100%;
+        display: block;
+
+
+
+    }
+
+    &__text{
+
+        column-count: 2;
+        column-gap: 2rem;
+        column-rule: 1px solid $color-grey-dark
+    }
+}

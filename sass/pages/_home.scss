@@ -85,13 +85,18 @@
     
 }
 
-.section-menu{
+.section-popup{
+
     position: fixed;
-   // background-color: $color-primary;
-    width: 100vw;
-    height: 100vh;
     top: 0;
     left: 0;
-    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#333,.8);
+    z-index: 99;
+
+
+
 }
+
 
