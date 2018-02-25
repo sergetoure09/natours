@@ -6,13 +6,14 @@
 
 
     &__checkbox{
+        display: none;
 
     }
 
     &__label{
         position: fixed;
-        top: 3rem;
-        right: 3rem;
+        top: 4rem;
+        right: 4rem;
         width: 7rem;
         height: 7rem;
         border-radius: 50px;
@@ -20,16 +21,19 @@
         cursor: pointer;
         text-align: center;
         display: inline-block;
-        //text-justify: distribute;
+        z-index: 10000;
+    box-shadow: 0 0 1rem rgba($color-grey-dark,.9)
+    }
 
 
 
 
 
-        span{
-        //    position: relative;
-        //    display: block;
-        // text-align: center;
+        &__bars{
+           position: relative;
+           margin-top: 3.5rem;
+           display: block;
+           
            
             
 
@@ -40,9 +44,10 @@
                 width: 3rem;
                 height: 2px;
                 background-color: $color-grey-dark;
-                position: absolute;
-                top: 50%;
-                right: 0;
+                transition: all .2s;
+                //position: absolute;
+                
+                
 
 
             }
@@ -50,13 +55,51 @@
             &::after,
             &::before{
                 content: "";
+                position: absolute;
+                left: 0
                 
             }
           
 
-            &::after{transform: translateY(1rem);background-color: red}
-            &::before{transform: translateY(-1rem);background-color: green}
+            &::after{transform: translateY(1rem)}
+            &::before{transform: translateY(-1rem)}
 
-        }
+        
+    }
+
+    &__checkbox:checked + &__label > &__bars{
+
+        background-color: #fff;
+
+    }
+    &__checkbox:checked + &__label > &__bars::before{
+        transform: rotate(140deg)
+    }
+    &__checkbox:checked + &__label > &__bars::after{
+        transform: rotate(-140deg)
+    }
+
+    &__background{
+        position: fixed;
+        top: 4.5rem;
+        right:4.5rem ;
+        width:4.5rem ;
+        height: 4.5rem;
+        background-image: radial-gradient($color-primary-light,$color-primary);
+        border-radius: 50px;
+        z-index: 100;
+        transition: all .3s cubic-bezier(0.86, 0.575, 0.565, 1);
+        
+    
+    }
+    &__checkbox:checked ~ &__background{
+        transform:scale(100)
+
+    }
+    &__checkbox:checked ~ .navigation {
+        opacity: 1;
+        width: 100%;
+       
     }
 }
+
